@@ -9,6 +9,8 @@ public abstract class Machine
     public int Exp { get; protected set; }
     public int Level { get; protected set; }
     public static int BuyValue { get; protected set; } = 3;
+    public virtual void DieAction() {   }
+    public virtual void RoundStartAction() {    }
 
     public Machine()
     {
